@@ -8,7 +8,7 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="mx-auto max-w-5xl pb-10 md:pb-0" role="main">
+    <div className="mx-auto max-w-5xl pb-10 md:pb-0">
       <Header openSidebar={() => setIsSidebarOpen(true)} />
       {isSidebarOpen && (
         <Sidebar closeSidebar={() => setIsSidebarOpen(false)} />
@@ -22,6 +22,17 @@ export default function App() {
         </h1>
         <ProductCard products={products} />
       </main>
+      <footer className="attribution pb-2">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by{" "}
+        <a href="https://github.com/brayanpesantes" target="_blank">
+          Alexis Nuñez
+        </a>
+        .
+      </footer>
     </div>
   );
 }
