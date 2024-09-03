@@ -12,7 +12,7 @@ export default function Header({ openSidebar }: HeaderProps) {
   return (
     <header
       className="flex justify-between items-center h-28 border-b border-gray-300"
-      role="banner"
+      role="header"
     >
       <div className="flex gap-14 items-center h-full">
         <div className="inline-flex items-center gap-4">
